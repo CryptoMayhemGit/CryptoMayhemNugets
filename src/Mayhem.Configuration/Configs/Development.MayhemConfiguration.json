@@ -1,0 +1,109 @@
+{
+  "MayhemConfiguration": {
+
+    "ConnectionStringsConfigruation": {
+      // Azure
+      //"MSSQLConnectionString": "Server=tcp:kielson-server.database.windows.net,1433;Initial Catalog=kielson-database;Persist Security Info=False;User ID=kielson;Password=SuperHaslo123!@#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+      // Karola
+      //"MSSQLConnectionString": "Server=KAROLA\\SQLEXPRESS;Initial Catalog=MayhemDatabase;Trusted_Connection=True;",
+      // Kielson 
+      "MSSQLConnectionString": "Server=DESKTOP-K7JOKMQ;Initial Catalog=MayhemDatabase;Trusted_Connection=True;",
+      // Pawe³
+      //"MSSQLConnectionString": "Server=DESKTOP-VKSBA33;Initial Catalog=MayhemDatabase;Trusted_Connection=True;",
+      "AzureQueueNpcConnectionString": "Endpoint=sb://kielek-queue.servicebus.windows.net/;SharedAccessKeyName=npcqueue;SharedAccessKey=DShgRVgQXVnudjMKVY/fA7A6dCGencnI4oK6Eog1fnY=;",
+      "AzureQueueItemConnectionString": "Endpoint=sb://kielek-queue.servicebus.windows.net/;SharedAccessKeyName=itemqueue;SharedAccessKey=KirfjtxTRiTEYWcQ6Ytj529Cuxq5Pmo5Sqe8+q/P4mQ=;",
+      "AzureQueueLandConnectionString": "Endpoint=sb://kielek-queue.servicebus.windows.net/;SharedAccessKeyName=landqueue;SharedAccessKey=RbIy7ekiNKqzLSAv29hrLGZu1UeCUo17TANFpsjVMhU=;",
+      "AzureQueueNotificationConnectionString": "Endpoint=sb://kielek-queue.servicebus.windows.net/;SharedAccessKeyName=notificationqueue;SharedAccessKey=whZHBd4Bl47cswlqq3jBUWcJhpw58yMGUH/uWGSNqjM=;",
+      "CacheConnectionString": "mayhem-cache.redis.cache.windows.net:6380,password=EeiS5lB4KkHTIlEPeBoW60lO68Oc9iZOJAzCaDbN2BE=,ssl=True,abortConnect=False",
+      "AppInsightInstrumentationKeyAPP": "a9dcd18d-f388-45bf-842d-91daf5876dd9",
+      "AzureBlobStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=kielsonstorage;AccountKey=OpR9vYO25NTERNqHENoZO1MOrnBLc8XrCUbvxaYREXCP+MzQ/DW6D1ZlxujFpl5uTL45BJzdgokIEhSPXWHdyA==;EndpointSuffix=core.windows.net"
+    },
+
+    "NotificationConfigruation": {
+      "SmtpSenderName": "Adria Corporation",
+      "SmtpSenderAddress": "no-reply@cryptomayhem.io",
+      "AdriaTeamAddress": "team@adriagames.com",
+      "StartTls": "true",
+      "SmtpHostAddress": "ssl0.ovh.net",
+      "SmtpHostPort": "587",
+      "SmtpHostUser": "no-reply@cryptomayhem.io",
+      "SmtpHostPass": "h9%Rvc#$Sv%^34Rf",
+      "ContactEmail": "contact@cryptomayhem.io"
+    },
+
+    "ServiceDiscoveryConfigruation": {
+      "MayhemApiEndpoint": "https://localhost:44344/",
+      "BscscanApiEndpoint": "https://api-testnet.bscscan.com/api",
+      "Web3ProviderEndpoint": "https://polygon-mumbai.g.alchemy.com/v2/fCFR-gvjU5B0npl193CQ3IZFHtiVZxi-",
+      "FtpEndpoint": "https://www.google.com",
+      "NotMintedFtpEndpoint": "https://www.google.com/notMinted"
+    },
+
+    "CommonConfiguration": {
+      "HttpClientServicePostTimeout": 30000,
+      "TokenLifetimeInMinutes": 1500, //TODO
+      "NonceLifetimeInMinutes": 1,
+      "ApiAuthorizationEnabled": true,
+      "BlockchainAuthorizationEnabled": true,
+      "TransferIntervalInSeconds": 2,
+      "GetLogsTopic": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+      "MaxBlocksToProcessed": 50,
+
+      "NftNpcDescription": "Mayhem Npcs Collection",
+      "NftItemDescription": "Mayhem Items Collection",
+      "NftLandDescription": "Mayhem Lands Collection",
+
+      "NftNpcSmartContractAddress": "0xedb35fdf202e9182bc385b0417336a967b18a90e",
+      "NftItemSmartContractAddress": "0xedb35fdf202e9182bc385b0417336a967b18a90e",
+      "NftLandSmartContractAddress": "0xedb35fdf202e9182bc385b0417336a967b18a90e",
+
+      "CacheName": "Mayhem-Cache",
+      "ResendNotificationTimeInMinutes": 1,
+      "TryResendNotificationTimeInMinutes": 10,
+      "ResendNotificationOlderThenInMinutes": 15,
+      "MaxNotificationAttempts": 3,
+
+      "NpcMoveSpeedInSeconds": 10,
+      "DiscovertyMissionSpeedInSeconds": 10,
+      "ExploreMissionSpeedInSeconds": 10,
+      "PlanetSize": 316,
+      "RunPathWorkerInSeconds": 10,
+      "RunDiscoveryMissionWorkerTimeInSeconds": 10,
+      "RunExploreMissionWorkerTimeInSeconds": 10
+    },
+
+    "ServiceSecretsConfigruation": {
+      "JwtIssuer": "https://localhost:44344/",
+      "JwtAudience": "https://localhost:44344/",
+      "JwtKey": "1kd8amb7qm3jfan2htysk194nalkg8343kdla02jfna8znvoq84nf82ms0gmn38",
+      "ActivationTokenSecretKey": "q_t<w*k2zA!%JUdmw@]!A4R`"
+    },
+
+    "GeneratorConfiguration": {
+      "PackageAmount": 1252,
+      "LandNftAmount": 1250,
+      "LandsPerInstance": 400,
+      "MinLandAmountPerInstance": 280,
+      "MaxLandAmountPerInstance": 320,
+      "MinLandForrestAmountPerInstance": 30,
+      "MaxLandForrestAmountPerInstance": 35,
+      "MinLandMountainsAmountPerInstance": 30,
+      "MaxLandMountainsAmountPerInstance": 35,
+      "MinLandFieldAmountPerInstance": 30,
+      "MaxLandFieldAmountPerInstance": 35,
+      "MinLandFarmAmountPerInstance": 30,
+      "MaxLandFarmAmountPerInstance": 35,
+      "MinLandUrbanAmountPerInstance": 30,
+      "MaxLandUrbanAmountPerInstance": 35,
+      "MinLandRuinsAmountPerInstance": 30,
+      "MaxLandRuinsAmountPerInstance": 35,
+      "MinLandWaterAmountPerInstance": 30,
+      "MaxLandWaterAmountPerInstance": 35,
+
+      "NftItemCreations": 4,
+      "NftNpcCreations": 6,
+      "NftAvatarCreations": 16,
+      "NftAvatarAmount": 16
+    }
+  }
+}
