@@ -2,7 +2,7 @@
 
 namespace Mayhem.Helper
 {
-    public class BonusHelper
+    public static class BonusHelper
     {
         private const int DecimalPlacesNumber = 6;
 

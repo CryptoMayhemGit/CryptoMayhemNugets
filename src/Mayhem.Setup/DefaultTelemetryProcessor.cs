@@ -2,7 +2,7 @@
 using Microsoft.ApplicationInsights.DataContracts;
 using Microsoft.ApplicationInsights.Extensibility;
 
-namespace Mayhem.ApplicationSetup
+namespace Mayhem.Setup
 {
     public class DefaultTelemetryProcessor : ITelemetryProcessor
     {

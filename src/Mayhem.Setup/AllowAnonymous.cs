@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Mayhem.ApplicationSetup
+namespace Mayhem.Setup
 {
     public class AllowAnonymous : IAuthorizationHandler
     {

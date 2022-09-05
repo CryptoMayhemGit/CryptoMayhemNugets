@@ -1,5 +1,4 @@
-﻿using Mayhem.Configuration.Interfaces;
-using Mayhem.HttpClient.Interfaces;
+﻿using Mayhem.HttpClient.Interfaces;
 using Mayhem.Messages;
 using Mayhem.Util.Classes;
 using Microsoft.Extensions.Logging;
@@ -18,19 +17,17 @@ namespace Mayhem.HttpClient.Implementation
     {
         private const string JsonMediaType = "application/json";
         private const string TimeoutPropertyKey = "RequestTimeout";
+        private const string HttpClientServicePostTimeout = "30000";
 
         private readonly ILogger<HttpClientService> logger;
-        private readonly IMayhemConfigurationService mayhemConfigurationService;
 
         private System.Net.Http.HttpClient httpClient;
 
         public HttpClientService(
             ILogger<HttpClientService> logger,
-            IHttpClientFactory httpClientFactory,
-            IMayhemConfigurationService mayhemConfigurationService)
+            IHttpClientFactory httpClientFactory)
         {
             this.logger = logger;
-            this.mayhemConfigurationService = mayhemConfigurationService;
             httpClient = httpClientFactory.CreateClient();
 
             SetCommonClientHeaders(httpClient);
@@ -340,7 +337,7 @@ namespace Mayhem.HttpClient.Implementation
             };
             AddAuthorizationHeader(request.Headers, accessToken);
             AddCustomHeaders(request.Headers, headers);
-            request.Options.Set(new HttpRequestOptionsKey<string>(TimeoutPropertyKey), mayhemConfigurationService.MayhemConfiguration.CommonConfiguration.HttpClientServicePostTimeout.ToString());
+            request.Options.Set(new HttpRequestOptionsKey<string>(TimeoutPropertyKey), HttpClientServicePostTimeout);
             return await httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
         }
 
