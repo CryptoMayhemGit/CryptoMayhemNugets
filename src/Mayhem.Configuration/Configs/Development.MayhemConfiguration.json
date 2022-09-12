@@ -2,14 +2,7 @@
   "MayhemConfiguration": {
 
     "ConnectionStringsConfigruation": {
-      // Azure
-      //"MSSQLConnectionString": "Server=tcp:kielson-server.database.windows.net,1433;Initial Catalog=kielson-database;Persist Security Info=False;User ID=kielson;Password=SuperHaslo123!@#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
-      // Karola
-      //"MSSQLConnectionString": "Server=KAROLA\\SQLEXPRESS;Initial Catalog=MayhemDatabase;Trusted_Connection=True;",
-      // Kielson 
-      "MSSQLConnectionString": "Server=DESKTOP-K7JOKMQ;Initial Catalog=MayhemDatabase;Trusted_Connection=True;",
-      // Pawe³
-      //"MSSQLConnectionString": "Server=DESKTOP-VKSBA33;Initial Catalog=MayhemDatabase;Trusted_Connection=True;",
+      "MSSQLConnectionString": "Server=tcp:kielson-server.database.windows.net,1433;Initial Catalog=kielson-database;Persist Security Info=False;User ID=kielson;Password=SuperHaslo123!@#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
       "AzureQueueNpcConnectionString": "Endpoint=sb://kielek-queue.servicebus.windows.net/;SharedAccessKeyName=npcqueue;SharedAccessKey=DShgRVgQXVnudjMKVY/fA7A6dCGencnI4oK6Eog1fnY=;",
       "AzureQueueItemConnectionString": "Endpoint=sb://kielek-queue.servicebus.windows.net/;SharedAccessKeyName=itemqueue;SharedAccessKey=KirfjtxTRiTEYWcQ6Ytj529Cuxq5Pmo5Sqe8+q/P4mQ=;",
       "AzureQueueLandConnectionString": "Endpoint=sb://kielek-queue.servicebus.windows.net/;SharedAccessKeyName=landqueue;SharedAccessKey=RbIy7ekiNKqzLSAv29hrLGZu1UeCUo17TANFpsjVMhU=;",
