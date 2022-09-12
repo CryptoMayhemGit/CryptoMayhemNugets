@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayhem.BlobStorage", "Mayhe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayhem.Setup", "Mayhem.Setup\Mayhem.Setup.csproj", "{F5A616DC-6D74-40DB-BC4B-EE2557557D6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayhem.Nuget.Tests", "Mayhem.Nuget.Tests\Mayhem.Nuget.Tests.csproj", "{38058A3B-7787-4485-8981-F3D749F43A85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{F5A616DC-6D74-40DB-BC4B-EE2557557D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5A616DC-6D74-40DB-BC4B-EE2557557D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5A616DC-6D74-40DB-BC4B-EE2557557D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38058A3B-7787-4485-8981-F3D749F43A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38058A3B-7787-4485-8981-F3D749F43A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38058A3B-7787-4485-8981-F3D749F43A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38058A3B-7787-4485-8981-F3D749F43A85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
