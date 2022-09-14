@@ -18,7 +18,6 @@
     <ProjectReference Include="..\Mayhem.Configuration\Mayhem.Configuration.csproj" />
     <ProjectReference Include="..\Mayhem.HealthCheck\Mayhem.HealthCheck.csproj" />
     <ProjectReference Include="..\Mayhem.HttpClient\Mayhem.HttpClient.csproj" />
-    <ProjectReference Include="..\Mayhem.Queue.Publisher.Notification\Mayhem.Queue.Publisher.Notification.csproj" />
     <ProjectReference Include="..\Mayhem.Settings\Mayhem.Settings.csproj" />
   </ItemGroup>
 

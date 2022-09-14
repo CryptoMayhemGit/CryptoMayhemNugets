@@ -2,11 +2,6 @@
 using Mayhem.Blockchain.Interfaces.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Nethereum.Web3;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Mayhem.Blockchain.Extensions
 {
