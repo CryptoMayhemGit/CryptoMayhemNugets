@@ -59,7 +59,7 @@
       "NpcMoveSpeedInSeconds": 10,
       "DiscovertyMissionSpeedInSeconds": 10,
       "ExploreMissionSpeedInSeconds": 10,
-      "PlanetSize": 316,
+      "PlanetSize": 317,
       "RunPathWorkerInSeconds": 10,
       "RunDiscoveryMissionWorkerTimeInSeconds": 10,
       "RunExploreMissionWorkerTimeInSeconds": 10
