@@ -46,7 +46,6 @@
         public const string UpdateUserLandStatusSql = "update dbo.UserLand set Status = @Status where Id = @Id";
         public const string AddUserLandSql = "insert into dbo.UserLand(LandId, UserId, Status, HasFog, Owned, OnSale) values (@LandId, @UserId, @Status, @HasFog, @Owned, @OnSale)";
 
-        // TODO docelowo można to zoptymalizować w celu pozbycia się 'except'
         public const string GetUserLandsFromUserPerspectiveSql = "select l.Id, l.PositionX, l.PositionY from UserLand as ul left join nft.Land as l on l.Id = ul.LandId left join nft.Npc as n on n.LandId = ul.LandId where ul.Status != 1 and ul.UserId = @UserId and (ul.HasFog = 1 or (ul.HasFog = 0 and (n.UserId = @UserId or n.UserId is NULL))) except select l.Id, l.PositionX, l.PositionY from UserLand as ul left join nft.Land as l on l.Id = ul.LandId left join nft.Npc as n on n.LandId = ul.LandId where ul.UserId != @UserId and ul.UserId is not null and ul.owned = 1";
 
         public static class Procedures

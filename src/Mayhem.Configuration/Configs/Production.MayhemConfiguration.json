@@ -34,7 +34,7 @@
 
     "CommonConfiguration": {
       "HttpClientServicePostTimeout": 30000,
-      "TokenLifetimeInMinutes": 1500, //TODO
+      "TokenLifetimeInMinutes": 1500,
       "NonceLifetimeInMinutes": 1,
       "ApiAuthorizationEnabled": true,
       "BlockchainAuthorizationEnabled": true,
