@@ -1,7 +1,7 @@
 ﻿using Mayhem.Queue.Classes;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Mayhem.Queue.Publisher.Notification.Extensions
+namespace Mayhem.Queue.Publishers.Extensions
 {
     public static class QueueExtensions
     {
