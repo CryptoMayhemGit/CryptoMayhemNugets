@@ -39,7 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayhem.Setup", "Mayhem.Setu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayhem.Nuget.Tests", "Mayhem.Nuget.Tests\Mayhem.Nuget.Tests.csproj", "{38058A3B-7787-4485-8981-F3D749F43A85}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mayhem.Queue.Publishers", "Mayhem.Queue.Publishers\Mayhem.Queue.Publishers.csproj", "{3D0FA811-6D7F-47E2-8A1B-761ACC5DD04E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mayhem.Queue.Publisher", "Mayhem.Queue.Publisher\Mayhem.Queue.Publisher.csproj", "{01B335F5-16CF-4A71-9890-B636C0BBABF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,10 +119,10 @@ Global
 		{38058A3B-7787-4485-8981-F3D749F43A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38058A3B-7787-4485-8981-F3D749F43A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38058A3B-7787-4485-8981-F3D749F43A85}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D0FA811-6D7F-47E2-8A1B-761ACC5DD04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D0FA811-6D7F-47E2-8A1B-761ACC5DD04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D0FA811-6D7F-47E2-8A1B-761ACC5DD04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D0FA811-6D7F-47E2-8A1B-761ACC5DD04E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B335F5-16CF-4A71-9890-B636C0BBABF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B335F5-16CF-4A71-9890-B636C0BBABF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B335F5-16CF-4A71-9890-B636C0BBABF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B335F5-16CF-4A71-9890-B636C0BBABF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

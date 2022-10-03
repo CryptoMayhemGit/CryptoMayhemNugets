@@ -1,9 +1,8 @@
 ﻿using Mayhem.Queue.Interfaces;
 using Mayhem.Queue.Publisher.Base.Interfaces;
 using Mayhem.Queue.Publisher.Base.Services;
-using Mayhem.Queue.Publishers;
 
-namespace Mayhem.Queue.Publishers
+namespace Mayhem.Queue.Publisher
 {
     public class NpcQueuePublisher : AzureServiceBusService, INpcQueuePublisher
     {
