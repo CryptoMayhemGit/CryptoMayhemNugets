@@ -11,7 +11,7 @@ namespace Mayhem.Nuget.Tests
     public class ConfigurationTests
     {
         [Test]
-        public void Test()
+        public void SetConfiguration_WhenConfigurationIsSet_ThenGetIt_Test()
         {
             IServiceCollection services = new ServiceCollection();
                 services.AddMayhemConfigurationService(Environment.GetEnvironmentVariable(
