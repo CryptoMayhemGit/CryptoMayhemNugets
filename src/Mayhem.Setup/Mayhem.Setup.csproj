@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Version>1.0.1</Version>
+	  <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,14 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Mayhem.BlobStorage\Mayhem.BlobStorage.csproj" />
-    <ProjectReference Include="..\Mayhem.Blockchain\Mayhem.Blockchain.csproj" />
-    <ProjectReference Include="..\Mayhem.Cache\Mayhem.Cache.csproj" />
-    <ProjectReference Include="..\Mayhem.Common.Services\Mayhem.Common.Services.csproj" />
     <ProjectReference Include="..\Mayhem.Configuration\Mayhem.Configuration.csproj" />
-    <ProjectReference Include="..\Mayhem.HealthCheck\Mayhem.HealthCheck.csproj" />
-    <ProjectReference Include="..\Mayhem.HttpClient\Mayhem.HttpClient.csproj" />
-    <ProjectReference Include="..\Mayhem.Settings\Mayhem.Settings.csproj" />
   </ItemGroup>
 
 </Project>
