@@ -40,7 +40,7 @@
         public const string GetTravelsSql = "SELECT * FROM dbo.Travel WHERE FinishDate < GETUTCDATE() order by FinishDate";
         public const string GetTravelWhereNpcIdSql = "SELECT * FROM dbo.Travel WHERE NpcId = @NpcId order by FinishDate";
         public const string DeleteTravelWhereIdSql = "delete FROM dbo.Travel WHERE Id = @Id";
-        public const string DeleteTravelWhereNpcIdSql = "delete FROM dbo.Travel WHERE Id = @Id";
+        public const string DeleteTravelWhereNpcIdSql = "delete FROM dbo.Travel WHERE NpcId = @NpcId";
 
         public const string GetUserLandWhereUserIdAndLandIdSql = "select * from dbo.UserLand where UserId = @UserId and LandId = @LandId";
         public const string UpdateUserLandStatusSql = "update dbo.UserLand set Status = @Status where Id = @Id";
