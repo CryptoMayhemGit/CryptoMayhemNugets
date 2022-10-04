@@ -3,13 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Version>1.0.2</Version>
+	  <Version>1.0.3</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Configs\Development.MayhemConfiguration.json" />
-    <None Remove="Configs\Production.MayhemConfiguration.json" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Configs\Production.MayhemConfiguration.json">
