@@ -7,12 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Configs\Production.MayhemConfiguration.json">
+    <EmbeddedResource Include="Configs\Production.MayhemConfiguration.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Configs\Development.MayhemConfiguration.json">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configs\Development.MayhemConfiguration.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
